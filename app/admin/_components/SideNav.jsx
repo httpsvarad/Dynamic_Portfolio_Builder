@@ -17,12 +17,12 @@ const SideNav = () => {
             icon: Home,
             path: '/'
         },
-        // {
-        //     id: 3,
-        //     name: 'Stats',
-        //     icon: BarChart,
-        //     path: '/admin/style'
-        // },
+        {
+            id: 3,
+            name: 'view',
+            icon: ArrowUpRight,
+            path: 'https://ninjaxportfolio.vercel.app/httpsvarad'
+        },
         // {
         //     id: 4,
         //     name: 'Settings',
