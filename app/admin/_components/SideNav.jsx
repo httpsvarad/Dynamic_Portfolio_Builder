@@ -1,5 +1,5 @@
 import { UserButton } from '@clerk/nextjs';
-import { BarChart, Brush, Home, Layers3, Settings } from 'lucide-react';
+import { ArrowUpRight, BarChart, Brush, Home, Layers3, Settings } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 
