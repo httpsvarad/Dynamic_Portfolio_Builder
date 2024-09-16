@@ -17,22 +17,22 @@ const SideNav = () => {
             icon: Home,
             path: '/'
         },
+//         {
+//             id: 3,
+// <<<<<<< HEAD
+//             name: 'View Portfolio',
+// =======
+//             name: 'view',
+// >>>>>>> dcc3489866aaec94d58efee3315a2edc5fd819b9
+//             icon: ArrowUpRight,
+//             path: 'https://ninjaxportfolio.vercel.app/httpsvarad'
+//         },
         {
             id: 3,
-<<<<<<< HEAD
             name: 'View Portfolio',
-=======
-            name: 'view',
->>>>>>> dcc3489866aaec94d58efee3315a2edc5fd819b9
             icon: ArrowUpRight,
             path: 'https://ninjaxportfolio.vercel.app/httpsvarad'
         },
-        // {
-        //     id: 4,
-        //     name: 'Settings',
-        //     icon: Settings,
-        //     path: '/admin/style'
-        // },
     ];
 
     return (
