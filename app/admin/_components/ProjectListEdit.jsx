@@ -35,7 +35,7 @@ const ProjectListEdit = ({ projectList }) => {
             }).where(eq(project.id, projectId));
 
             if (result) {
-                toast.success('Project Updated', {
+                toast.success('Project Updated - Refresh to Preview', {
                     position: 'top-right'
                 })
             }

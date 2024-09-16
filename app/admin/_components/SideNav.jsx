@@ -7,7 +7,7 @@ const SideNav = () => {
     const menuList = [
         {
             id: 1,
-            name: 'Pages',
+            name: 'Design',
             icon: Layers3,
             path: '/admin'
         },
@@ -19,7 +19,7 @@ const SideNav = () => {
         },
         {
             id: 3,
-            name: 'view',
+            name: 'View Portfolio',
             icon: ArrowUpRight,
             path: 'https://ninjaxportfolio.vercel.app/httpsvarad'
         },
@@ -35,8 +35,9 @@ const SideNav = () => {
         <div className='p-4 h-screen bg-[#DBCA9A]'>
             <div>
                 {menuList.map((menu) => (
-                    <Link href={menu.path} key={menu.id} className='rounded-lg bg-primary cursor-pointer flex justify-center py-4 mb-5'>
+                    <Link href={menu.path} key={menu.id} className='rounded-lg bg-primary cursor-pointer text-center flex-col items-center flex justify-center py-4 mb-5'>
                         <menu.icon />
+                        <p className='mt-1 text-[11px]'>{menu.name}</p>
 
                     </Link>
                 ))}

@@ -27,7 +27,7 @@ const AddProject = () => {
         setOpenProjectBox(false);
 
         if(result) {
-            toast.success('URL Added',{
+            toast.success('URL Added - Refresh to Preview',{
                 position:'top-right'
             })
         }

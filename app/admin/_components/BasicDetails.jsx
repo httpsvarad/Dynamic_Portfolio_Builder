@@ -64,7 +64,7 @@ const BasicDetails = () => {
         
       >
         <option value="">
-          Select your theme
+        select theme: {userDetails?.theme}
         </option>
         <option value="light">light</option>
         <option value="dark">dark</option>
