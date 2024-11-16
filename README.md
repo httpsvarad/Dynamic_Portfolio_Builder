@@ -39,7 +39,7 @@ npm install
 ```  
 
 ### 3. Configure environment variables  
-Create a `.env` file in the root directory and add the following:  
+Create a .env file in the root directory and add the following:  
 ```env  
 DATABASE_URL=your_postgresql_database_url  
 NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_frontend_api_key  
@@ -64,7 +64,7 @@ npm start
 1. **Authentication**: Users log in or sign up via **Clerk**.  
 2. **Add Projects**: Users input project details (title, description, technologies, live link, etc.).  
 3. **Generate Portfolio**: Projects are dynamically displayed on a shareable portfolio page.  
-4. **Custom Link Sharing**: Users get a unique portfolio link like `ninjax.com/username`.  
+4. **Custom Link Sharing**: Users get a unique portfolio link like ninjax.com/username.  
 
 ---
 
