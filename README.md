@@ -1,4 +1,4 @@
-# Ninjax: Dynamic Portfolio Builder  
+# Ninjax: Dynamic Portfolio Builder   
 
 **Ninjax** is a dynamic portfolio-building platform designed for developers and creatives to effortlessly showcase their projects. Built with **Next.js**, **PostgreSQL**, and **Clerk** for authentication, it empowers users to add, manage, and share their portfolios with a sleek and professional design.  
 
