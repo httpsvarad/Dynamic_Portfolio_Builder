@@ -20,7 +20,7 @@
 - **Frontend**: Next.js  
 - **Authentication**: Clerk  
 - **Database**: PostgreSQL  
-- **Styling**: Tailwind CSS  
+- **Styling**: Tailwind CSS    
 - **Deployment**: Vercel  
 
 ---
