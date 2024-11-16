@@ -76,6 +76,12 @@ npm start
 
 ---
 
+## Live Link  
+
+https://ninjaxportfolio.vercel.app/ 
+
+---
+
 ## 📧 Contact  
 
 Have questions or want to contribute? Reach out at:  
