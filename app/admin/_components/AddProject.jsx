@@ -56,7 +56,7 @@ const AddProject = () => {
                     <label className="input input-bordered flex my-3  items-center gap-2">
                         <Link />
                         <input className='w-full' type="url"
-                            placeholder="Project URL" />
+                            placeholder="Project URL" required />
                     </label>
                     <button type="submit" className="btn btn-outline my-2 btn-neutral">Add URL</button>
 
