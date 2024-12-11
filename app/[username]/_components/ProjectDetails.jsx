@@ -29,7 +29,7 @@ const ProjectDetails = ( {projectDetails=[]} ) => {
                     </div>
                 ))
             ) : (
-                <p>Add your projects! Refresh if data isn't updating.</p>
+                <p>Loading! Refresh if data isn't updating.</p>
             )}
         </div>
     );
