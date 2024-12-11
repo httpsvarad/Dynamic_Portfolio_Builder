@@ -1,0 +1,10 @@
+/* Hide scrollbars for iframe */
+#iframepre::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in webkit browsers */
+  }
+  
+#iframepre {
+    -ms-overflow-style: none;  /* Internet Explorer and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
