@@ -37,7 +37,7 @@ const UserPage = ({ params }) => {
 
         if (!result || result.length === 0) {
             // If no user is found, navigate to a 404 page or show an error
-            router.push('/404'); // Redirect to a custom 404 page
+            router.push('/'); // Redirect to a custom 404 page
             return;
         }
 
