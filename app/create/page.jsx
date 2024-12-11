@@ -43,6 +43,14 @@ const CreateUsername = () => {
 
     const usernameTrimmed = username.trim();
 
+    const regex = /^(?!\d+$)[a-z0-9]+$/; // Only lowercase letters and numbers allowed
+    if (!regex.test(usernameTrimmed)) {
+      toast.error("Use Only Lowercase & Numbers", {
+        position: "bottom-right"
+      });
+      return;
+    }
+
     const Match = await db.query.userInfo.findMany({
 
       where: eq(userInfo.username, usernameTrimmed),
@@ -61,7 +69,7 @@ const CreateUsername = () => {
       .values({
         name: user?.fullName,
         email: user?.primaryEmailAddress?.emailAddress,
-        username: username.replace(' ', '')
+        username: usernameTrimmed
         // imageurl: user?.imageUrl
 
       })

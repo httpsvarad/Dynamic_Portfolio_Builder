@@ -6,8 +6,11 @@ import UserDetailsInfo from './_components/UserDetailsInfo';
 import { db } from '@/utils';
 import { eq } from 'drizzle-orm';
 import { userInfo } from '@/utils/schema';
+import { useRouter } from 'next/navigation';
 
 const UserPage = ({ params }) => {
+
+    const router = useRouter();
 
     const [currentUser, setCurrentUser] = useState('')
 
@@ -32,10 +35,18 @@ const UserPage = ({ params }) => {
 
         })
 
+        if (!result || result.length === 0) {
+            // If no user is found, navigate to a 404 page or show an error
+            router.push('/404'); // Redirect to a custom 404 page
+            return;
+        }
+
         // console.log("current", result)
 
         setUserDetails(result[0]);
         setCurrentUser(result[0]);
+
+        
 
     }
 
