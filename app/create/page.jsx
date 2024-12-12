@@ -46,7 +46,7 @@ const CreateUsername = () => {
 
     const regex = /^(?!\d+$)[a-z0-9]+$/; // Only lowercase letters and numbers allowed
     if (!regex.test(usernameTrimmed)) {
-      toast.error("Use Only Lowercase & Numbers", {
+      toast.error("Invalid Username", {
         position: "bottom-right"
       });
       return;
@@ -106,15 +106,17 @@ const CreateUsername = () => {
 
   return (
     <div className='items-center justify-center h-screen flex'>
-      <div className='border rounded-md p-10 flex flex-col'>
+      <div className='border m-5 rounded-md p-10 flex flex-col'>
         <h2 className='font-bold text-2xl text-center py-5'>Create Portfolio Username</h2>
-        <label>Add Username for Your Portfolio</label>
+        <label>Add Username for Your Portfolio:</label>
+        <p className='my-2 text-red-500'>Note: lowercase letters only, no special characters or spaces.</p>
+        
         <input
           type="text"
           placeholder="Type here"
           value={username}
           onChange={(event) => setUsername(event.target.value)}
-          className="input input-bordered w-full max-w-xs"
+          className="input input-bordered w-full"
         />
         <button
           onClick={OnCreateBtnClick}
