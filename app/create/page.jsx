@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import sendEmail from '../_emailjs/emailjs.config';
 
 
 const CreateUsername = () => {
@@ -87,12 +88,12 @@ const CreateUsername = () => {
       //   window.location.reload(); // Reloads the page to ensure the latest data is reflected
       // });
 
-      // try {
-      //   const receiver = user?.primaryEmailAddress?.emailAddress;
-      //   sendEmail(receiver, username)
-      // } catch (error) {
-      //   console.log('Error Sending Email:', error)
-      // }
+      try {
+        const receiver = user?.primaryEmailAddress?.emailAddress;
+        sendEmail(receiver, usernameTrimmed)
+      } catch (error) {
+        console.log('Error Sending Email:', error)
+      }
     }
   }
 
