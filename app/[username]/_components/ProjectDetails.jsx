@@ -29,7 +29,7 @@ const ProjectDetails = ( {projectDetails=[]} ) => {
                     </div>
                 ))
             ) : (
-                <p>Loading! please wait... Refresh if it's taking too long.</p>
+                <p>Start adding your projects / Refresh if it's taking too long!</p>
             )}
         </div>
     );

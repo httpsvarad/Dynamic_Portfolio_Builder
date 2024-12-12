@@ -1,7 +1,7 @@
 "use client"
 import { UserDetailContext } from '@/app/_context/UserDetailContext';
 import { UserButton } from '@clerk/nextjs';
-import { ArrowUpRight, BarChart, Brush, Home, Layers3, Settings } from 'lucide-react';
+import { ArrowUpRight, BarChart, Brush, FileQuestion, Home, Layers3, Settings } from 'lucide-react';
 import Link from 'next/link';
 import React, { useContext } from 'react';
 
@@ -14,9 +14,9 @@ const SideNav = () => {
     const menuList = [
         {
             id: 1,
-            name: 'Design',
-            icon: Layers3,
-            path: '/admin'
+            name: 'Help',
+            icon: FileQuestion,
+            path: 'mailto:varad.manegopale28@gmail.com'
         },
         {
             id: 2,
