@@ -81,8 +81,15 @@ const CreateUsername = () => {
       });
       router.replace('/admin')
       setTimeout(() => {
-        window.location.reload(); // Reloads the page to ensure the latest data is reflected
+        // Ensure reload happens after the navigation
+        if (window.location.pathname === '/admin') {
+          window.location.reload();
+        }
       }, 1000);
+      
+      // setTimeout(() => {
+      //   window.location.reload(); // Reloads the page to ensure the latest data is reflected
+      // }, 1000);
 
       // router.replace('/admin', undefined, { scroll: false }).then(() => {
       //   window.location.reload(); // Reloads the page to ensure the latest data is reflected
