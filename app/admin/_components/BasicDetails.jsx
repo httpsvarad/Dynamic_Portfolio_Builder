@@ -103,7 +103,7 @@ const BasicDetails = () => {
       <div className='flex gap-6'>
         {/* <img className= 'h-12 w-12 rounded-full' src={user?.imageUrl} alt="" /> */}
         {/* <Camera className='p-3 h-12 w-12 bg-gray-400 rounded-full' /> */}
-        <input disabled type="text" placeholder="Name" defaultValue={userDetails?.name} className="input input-bordered w-full" />
+        <input onChange={(event) => onInputChange(event, 'name')} type="text" placeholder="Name" defaultValue={userDetails?.name} className="input input-bordered w-full" />
       </div>
       <textarea onChange={(event) => onInputChange(event, 'bio')} defaultValue={userDetails?.bio} className="textarea w-full mt-6 textarea-bordered" placeholder="Write about yourself"></textarea>
 
