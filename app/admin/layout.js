@@ -5,16 +5,20 @@ import Provider from './Provider';
 const AdminLayout = ({ children }) => {
     return (
         <div>
-            <div className='w-24 fixed'>
-                <SideNav />
-            </div>
-            <div className='ml-24'>
-                <Provider>
+            <Provider>
+                <div className='w-24 fixed'>
+
+                    <SideNav />
+
+                </div>
+                <div className='ml-24'>
+                    {/* <Provider> */}
                     {children}
 
-                </Provider>
+                    {/* </Provider> */}
 
-            </div>
+                </div>
+            </Provider>
         </div>
     );
 }
