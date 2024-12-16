@@ -89,7 +89,7 @@ const SideNav = () => {
                         <div className="modal-action">
                             <form method="dialog">
                                 {/* if there is a button, it will close the modal */}
-                                <button className="btn">Close</button>
+                                <button className="btn text-red-700 font-bold hover:bg-slate-100 bg-slate-200">Close</button>
                             </form>
                         </div>
                     </div>
