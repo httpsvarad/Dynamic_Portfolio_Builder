@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <>
       {/* Hero */}
-      <div className="bg-gradient-to-b h-screen flex items-center from-violet-600/10 via-transparent">
+      <div className="bg-black h-screen flex items-center">
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
           {/* Announcement Banner */}
           <div className="flex justify-center">
