@@ -73,6 +73,17 @@ const Page = () => {
           </div>
           {/* End Buttons */}
         </div>
+          {/* Footer */}
+        <div className="absolute bottom-5 text-center">
+          <a
+            href="https://www.linkedin.com/in/varadmanegopale/"
+            className="text-white text-sm underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Made with 💝 by Varad Manegopale
+          </a>
+        </div>
       </div>
       {/* End Hero */}
     </>
