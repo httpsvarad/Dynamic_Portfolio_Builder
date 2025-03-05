@@ -74,16 +74,18 @@ const Page = () => {
           {/* End Buttons */}
         </div>
           {/* Footer */}
-         <div className="absolute bottom-5 text-center text-white text-sm">
-          Made with ❤️ by{' '}
-          <a
-            href="https://www.linkedin.com/in/varadmanegopale/"
-            className="underline transition-colors duration-300 hover:text-purple-500"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Varad Manegopale
-          </a>
+         <div className="w-full absolute bottom-5 flex justify-center">
+          <p className="text-white text-sm">
+            Made with ❤️ by{' '}
+            <a
+              href="https://www.linkedin.com/in/varad-manegopale-38085224a/"
+              className="underline transition-colors duration-300 hover:text-purple-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Varad Manegopale
+            </a>
+          </p>
         </div>
       </div>
       {/* End Hero */}
