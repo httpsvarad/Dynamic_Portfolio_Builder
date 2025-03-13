@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { TicofabCanvas } from "./canvas";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import "./textclip.css";
 
 import {
   BsTwitter,
@@ -49,7 +50,7 @@ const Hero = ({ currentUser }) => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm{" "}
-            <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black inline-block">
+            <span className="text-grad-clip animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
             {currentUser?.name}
             </span>
           </h1>
