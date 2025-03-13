@@ -8,6 +8,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { Loader } from "lucide-react";
+import "./textclip.css";
 
 const Contact = ({ currentUser }) => {
   const formRef = useRef();
@@ -69,7 +70,7 @@ const Contact = ({ currentUser }) => {
         className="flex-[0.75] bg-[#100D25] p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h2 className={`${styles.sectionHeadText} bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}>
+        <h2 className={`${styles.sectionHeadText} text-grad-clip bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}>
           Contact.
         </h2>
 

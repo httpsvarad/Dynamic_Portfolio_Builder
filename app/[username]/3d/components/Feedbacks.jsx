@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import "./textclip.css";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -67,7 +67,7 @@ const ImageCarousel = ({currentUser}) => {
     <div className="carousel-container">
       <p className={styles.sectionSubText}>Check it out</p>
       <h2
-        className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}
+        className={`${styles.sectionHeadText} text-grad-clip animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}
       >
         Dev Metrics.
       </h2>

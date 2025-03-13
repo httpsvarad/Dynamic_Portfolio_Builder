@@ -7,6 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { c } from "maath/dist/index-43782085.esm";
+import "./textclip.css";
 
 const ProjectCard = ({ projectDetails = [] }) => {
   // console.log(projectDetails);
@@ -18,7 +19,7 @@ const ProjectCard = ({ projectDetails = [] }) => {
         scale: 1,
         speed: 450,
       }}
-      className="bg-[#151030] p-5 rounded-2xl sm:w-[360px] w-full"
+      className="bg-[#100D25] p-5 rounded-2xl sm:w-[360px] w-full"
     >
       {/* <div className="relative w-full h-[230px]">
           <img
@@ -85,7 +86,7 @@ const Works = ({ projectDetails = [] }) => {
       {/* <motion.div variants={textVariant()}> */}
       <p className={`${styles.sectionSubText} `}>My Showcase</p>
       <h2
-        className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}
+        className={`${styles.sectionHeadText} text-grad-clip animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}
       >
         Projects.
       </h2>
