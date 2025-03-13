@@ -7,6 +7,7 @@ import { db } from '@/utils';
 import { eq } from 'drizzle-orm';
 import { userInfo } from '@/utils/schema';
 import { useRouter } from 'next/navigation';
+import { Clapperboard } from 'lucide-react';
 
 const UserPage = ({ params }) => {
 
@@ -46,7 +47,7 @@ const UserPage = ({ params }) => {
         setUserDetails(result[0]);
         setCurrentUser(result[0]);
 
-        
+
 
     }
 
@@ -58,6 +59,7 @@ const UserPage = ({ params }) => {
                 <UserDetailsInfo currentUser={currentUser} />
             </div>
             <div className='md:col-span-2'>
+                <h2 className='pl-7 pt-3 font-bold hidden md:block'>MY SHOWCASE 🚀</h2>
                 <ProjectDetails projectDetails={currentUser?.project} />
                 {/* chage */}
             </div>

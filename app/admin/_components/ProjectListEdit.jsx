@@ -81,6 +81,20 @@ const ProjectListEdit = ({ projectList, refreshData }) => {
                         />
                         <input
                             type="text"
+                            placeholder="TechStack: React | Node | Express"
+                            defaultValue={project.tech}
+                            onChange={(event) => onInputChange(event, 'tech', project.id)}
+                            className="input my-3 input-bordered w-full"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Label: #Hackathon Finalist"
+                            defaultValue={project.label}
+                            onChange={(event) => onInputChange(event, 'label', project.id)}
+                            className="input my-3 input-bordered w-full"
+                        />
+                        <input
+                            type="text"
                             placeholder="URL"
                             className="input my-3 input-bordered w-full"
                             defaultValue={project.url}

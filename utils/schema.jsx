@@ -47,12 +47,17 @@ export const userInfo = pgTable('userInfo', {
     linkedin: varchar('linkedin'),
     github: varchar('github'),
     theme: varchar('theme').default('light'),
-    imageurl: varchar('imageurl')
+    imageurl: varchar('imageurl'),
+    resume: varchar('resume'),
+    profiledesc: text('profiledesc'),
+
 });
 
 export const project = pgTable('project', {
     id: serial('id').primaryKey(),
     name: varchar('name'),
+    tech: varchar('tech'),
+    label: varchar('label'),
     desc: text('desc'),
     url: varchar('url').notNull(),
     emailref: varchar('emailref'),
