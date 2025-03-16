@@ -30,7 +30,7 @@ const ProjectDetails = ({ projectDetails = [] }) => {
                             className="btn my-2 btn-primary"
                             onClick={() => window.open(project.url, '_blank')}
                         >
-                            Launch Project
+                            Explore
                         </button>
                     </div>
                 ))
