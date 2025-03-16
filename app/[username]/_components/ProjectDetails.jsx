@@ -27,7 +27,7 @@ const ProjectDetails = ({ projectDetails = [] }) => {
                         
 
                         <button
-                            className="btn my-2 btn-primary"
+                            className="btn my-2 btn-sm btn-primary"
                             onClick={() => window.open(project.url, '_blank')}
                         >
                             View Project
