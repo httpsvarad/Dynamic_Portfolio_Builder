@@ -22,7 +22,7 @@ const UserDetailsInfo = ({ currentUser }) => {
                     <div className='flex justify-center md:justify-start my-3 gap-3'>
                         <a className='my-auto' href={currentUser?.linkedin}><Linkedin /></a>
                         <a className='my-auto' href={currentUser?.github}><Github /></a>
-                        <a className='my-auto' target='blank' href={currentUser?.resume}><button className="btn btn-sm btn-primary">Resume<Download size={18} /></button></a>
+                        <a className='my-auto' target='blank' href={currentUser?.resume}><button className="btn btn-outline btn-sm btn-primary">Resume<Download size={18} /></button></a>
                         <a className="my-auto" href={`/${currentUser?.username}/3d`}>
                             <button className="btn btn-sm btn-outline btn-secondary">
                                 3D <Link size={18} className="animate-bounce" />
