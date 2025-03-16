@@ -59,7 +59,7 @@ const UserPage = ({ params }) => {
                 <UserDetailsInfo currentUser={currentUser} />
             </div>
             <div className='md:col-span-2'>
-                <h2 className='pl-7 pt-3 font-bold hidden md:block'>MY SHOWCASE 🚀</h2>
+                <h2 className='pl-7 pt-3 font-bold hidden md:block'>MY PROJECTS 🚀</h2>
                 <ProjectDetails projectDetails={currentUser?.project} />
                 {/* chage */}
             </div>
