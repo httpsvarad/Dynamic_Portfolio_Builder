@@ -36,13 +36,13 @@ const UserDetailsInfo = ({ currentUser }) => {
                 </div>
 
                 {/* GitHub Stats */}
-                <div className="mt-5 p-2 md:p-0">
+                {/* <div className="mt-5 p-2 md:p-0">
                     <img
                         src={`https://github-readme-stats.vercel.app/api?username=${gitusername}&show_icons=true&theme=radical&border_color=00000000`}
                         alt="GitHub Stats"
                         className="border-0 rounded-lg"
                     />
-                </div>
+                </div> */}
 
 
             </div>
