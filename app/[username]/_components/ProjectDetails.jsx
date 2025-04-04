@@ -6,11 +6,11 @@ const ProjectDetails = ({ projectDetails = [] }) => {
     
 
     return (
-        <div className='p-2 pt-0 md:p-7 md:pt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
+        <div className='p-2 pt-0 md:p-3 md:pr-0 md:pt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
             
             {projectDetails.length > 0 ? (
                 projectDetails.map((project) => (
-                    <div className='p-7 mb-2 md:mb-1 border shadow-md rounded-lg' key={project.id}>
+                    <div className='p-7 mb-2 md:mb-1 border border-gray-300 md:mr-1 shadow-md rounded-lg' key={project.id}>
                         <div className='flex justify-between'>
                             <h2 className='font-bold'>{project.name}</h2>
                             {project.label && (
