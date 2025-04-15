@@ -72,8 +72,8 @@ export default function Page() {
                         <div className='m-auto flex items-center justify-center'>
                             <ClerkLoading>
                                 <div className='text-black'>
-                                    <Loader className='animate-spin mx-auto' size={32} />
-                                    <div className='mt-3 text-xl font-medium'><h2>Loading</h2></div>
+                                    <Loader className='animate-spin mx-auto' size={28} />
+                                    <div className='mt-3 font-medium'><h2>Loading</h2></div>
                                 </div>
                             </ClerkLoading>
                             <ClerkLoaded>

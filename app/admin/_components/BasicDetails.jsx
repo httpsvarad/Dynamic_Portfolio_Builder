@@ -217,7 +217,7 @@ const BasicDetails = () => {
             placeholder="GitHub" />
         </label>
 
-        <label className="btn btn-neutral">
+        <label className="btn mt-3 md:mt-0 btn-neutral">
           {uploading ? "Uploading..." : "Upload Resume"}
           <input
             type="file"
