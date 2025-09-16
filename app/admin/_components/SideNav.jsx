@@ -42,19 +42,9 @@ const SideNav = () => {
             icon: Home,
             path: '/'
         },
-        //         {
-        //             id: 3,
-        // <<<<<<< HEAD
-        //             name: 'View Portfolio',
-        // =======
-        //             name: 'view',
-        // >>>>>>> dcc3489866aaec94d58efee3315a2edc5fd819b9
-        //             icon: ArrowUpRight,
-        //             path: 'https://ninjaxportfolio.vercel.app/httpsvarad'
-        //         },
         {
             id: 3,
-            name: 'Visit Portfolio',
+            name: 'Visit',
             icon: ArrowUpRight,
             path: `/${userDetails?.username}`,
             openInNewTab: true,
@@ -63,33 +53,30 @@ const SideNav = () => {
     ];
 
     return (
-        <div className='p-4 h-screen bg-[#DBCA9A]'>
+        <div className='p-4 h-screen bg-[#DBCA9A] flex flex-col items-center'>
             <div>
                 {menuList.map((menu) => (
-                    <Link href={menu.path} key={menu.id} target={menu.openInNewTab ? '_blank' : '_self'} className='rounded-lg bg-primary cursor-pointer text-center flex-col items-center flex justify-center py-4 mb-5'>
-                        <menu.icon />
-                        <p className='mt-1 text-[11px]'>{menu.name}</p>
+                    <Link href={menu.path} key={menu.id} target={menu.openInNewTab ? '_blank' : '_self'} className='rounded-lg bg-primary cursor-pointer text-center flex-col items-center flex justify-center p-2 md:p-3 mb-5'>
+                        <menu.icon size={16} />
+                        <p className='mt-1 text-[10px]'>{menu.name}</p>
 
                     </Link>
                 ))}
+                <button className="btn block font-normal lg:hidden px-[0.66rem] text-[10px]" onClick={() => document.getElementById('my_modal_4').showModal()}>See Live</button>
             </div>
 
 
             {/* mobilemodalpreview */}
-            {/* You can open the modal using document.getElementById('ID').showModal() method */}
-            <button className="btn block md:hidden px-[0.66rem] text-[11px]" onClick={() => document.getElementById('my_modal_4').showModal()}>Live Preview</button>
             <dialog id="my_modal_4" className="modal">
                 <div className='p-3 h-full justify-center items-center flex w-full'>
                     <div className="modal-box w-full overflow-hidden h-full">
-                        <iframe src={iframeSrc} className="h-[90%] w-full"
+                        <iframe src={iframeSrc} className="h-[90%] rounded-md w-full"
                             key={updatePreview}
                             frameborder="0"></iframe>
-                        {/* <h3 className="font-bold text-lg">Hello!</h3>
-                    <p className="py-4">Click the button below to close</p> */}
+
                         <div className="modal-action">
                             <form method="dialog">
-                                {/* if there is a button, it will close the modal */}
-                                <button className="btn text-red-700 font-bold hover:bg-slate-100 bg-slate-200">Close</button>
+                                <button className="btn-sm rounded-md text-red-700 mb-4 font-bold hover:bg-slate-100 bg-slate-200">Close</button>
                             </form>
                         </div>
                     </div>

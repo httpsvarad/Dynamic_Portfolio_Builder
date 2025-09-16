@@ -38,7 +38,7 @@ const admin = () => {
                 <div className='pt-3 md:pt-0 col-span-2 overflow-y-auto h-screen'>
                     <FormContent/>
                 </div>
-                <div className='overflow-hidden hidden md:block'>
+                <div className='overflow-hidden hidden lg:block'>
                     <MobilePreview/>
                 </div>
 

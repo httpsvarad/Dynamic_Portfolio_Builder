@@ -6,12 +6,10 @@ const AdminLayout = ({ children }) => {
     return (
         <div>
             <Provider>
-                <div className='w-24 fixed'>
-
+                <div className='md:w-20 w-16 fixed'>
                     <SideNav />
-
                 </div>
-                <div className='ml-24'>
+                <div className='ml-16 md:ml-24'>
                     {/* <Provider> */}
                     {children}
 
