@@ -35,7 +35,7 @@ const admin = () => {
     return (
         <div className='max-h-[100vh] overflow-hidden'>
             <div className='grid grid-cols-1 lg:grid-cols-3'>
-                <div className='pt-3 md:pt-0 col-span-2 overflow-y-auto h-[100dvh]' style={{ WebkitOverflowScrolling: "touch" }}>
+                <div className='pt-3 md:pt-0 col-span-2 overflow-y-auto h-screen'>
                     <FormContent/>
                 </div>
                 <div className='overflow-hidden hidden lg:block'>
