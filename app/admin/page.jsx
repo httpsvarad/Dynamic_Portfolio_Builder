@@ -1,3 +1,55 @@
+// "use client"
+// import { db } from '@/utils'
+// import { userInfo } from '@/utils/schema'
+// import { useUser } from '@clerk/nextjs'
+// import { eq } from 'drizzle-orm'
+// import { useRouter } from 'next/navigation'
+// import { useEffect } from 'react'
+// import React from 'react'
+// import FormContent from './_components/FormContent'
+// import MobilePreview from './_components/MobilePreview'
+
+// const admin = () => {
+
+//     const { user } = useUser();
+//     const router = useRouter();
+
+//     useEffect(() => {
+//         user && checkUser();
+//     }, [user])
+
+//     const checkUser = async () => {
+
+//         const result = await db.select().from(userInfo)
+//             .where(eq(userInfo.email, user?.primaryEmailAddress?.emailAddress));
+
+       
+
+//         if (result?.length == 0) {
+
+//             router.replace('/create')
+
+//         }
+//     }
+
+//     return (
+//         <div className='max-h-[100vh] overflow-hidden'>
+//             <div className='grid grid-cols-1 lg:grid-cols-3'>
+//                 <div className='pt-3 md:pt-0 col-span-2 overflow-y-auto h-[100dvh]'>
+//                     <FormContent/>
+//                 </div>
+//                 <div className='overflow-hidden hidden lg:block'>
+//                     <MobilePreview/>
+//                 </div>
+
+//             </div>
+//         </div>
+//     )
+// }
+
+// export default admin
+
+
 "use client"
 import { db } from '@/utils'
 import { userInfo } from '@/utils/schema'
@@ -9,42 +61,38 @@ import React from 'react'
 import FormContent from './_components/FormContent'
 import MobilePreview from './_components/MobilePreview'
 
-const admin = () => {
+const Admin = () => {
+  const { user } = useUser();
+  const router = useRouter();
 
-    const { user } = useUser();
-    const router = useRouter();
+  useEffect(() => {
+    user && checkUser();
+  }, [user]);
 
-    useEffect(() => {
-        user && checkUser();
-    }, [user])
+  const checkUser = async () => {
+    const result = await db
+      .select()
+      .from(userInfo)
+      .where(eq(userInfo.email, user?.primaryEmailAddress?.emailAddress));
 
-    const checkUser = async () => {
-
-        const result = await db.select().from(userInfo)
-            .where(eq(userInfo.email, user?.primaryEmailAddress?.emailAddress));
-
-       
-
-        if (result?.length == 0) {
-
-            router.replace('/create')
-
-        }
+    if (result?.length === 0) {
+      router.replace('/create');
     }
+  };
 
-    return (
-        <div className='max-h-[100vh] overflow-hidden'>
-            <div className='grid grid-cols-1 lg:grid-cols-3'>
-                <div className='pt-3 md:pt-0 col-span-2 overflow-y-auto h-[100dvh]'>
-                    <FormContent/>
-                </div>
-                <div className='overflow-hidden hidden lg:block'>
-                    <MobilePreview/>
-                </div>
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-3">
+      {/* Main form */}
+      <div className="pt-3 md:pt-0 col-span-2">
+        <FormContent />
+      </div>
 
-            </div>
-        </div>
-    )
-}
+      {/* Mobile preview only on large screens */}
+      <div className="hidden lg:block">
+        <MobilePreview />
+      </div>
+    </div>
+  );
+};
 
-export default admin
+export default Admin;
